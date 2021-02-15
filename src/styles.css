@@ -1,0 +1,78 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+::selection {
+  background: #a5b4fc;
+}
+
+::-moz-selection {
+  background: #a5b4fc;
+}
+
+.navbar-item {
+  @apply flex flex-col items-center px-8 py-2 h-auto w-24 text-black dark:text-gray-200 hover:bg-gray-100 dark:hover:bg-dark-300 hover:shadow rounded-lg transition ease-out duration-500 focus:outline-none;
+}
+
+.navbar-toggle {
+  @apply flex flex-col items-center px-8 py-2 h-12 w-12 text-black dark:text-gray-200 hover:bg-gray-100 dark:hover:bg-dark-300  hover:shadow rounded-lg transition ease-out duration-500 focus:outline-none;
+}
+
+.navbar-active {
+  @apply flex flex-col items-center px-8 py-2 h-auto w-24 text-indigo-600 dark:text-indigo-500 hover:bg-gray-100 dark:hover:bg-dark-300 hover:shadow rounded-lg transition ease-out duration-500 focus:outline-none;
+}
+
+.side-card-header {
+  @apply flex flex-row items-center text-lg font-semibold text-gray-800 dark:text-gray-200 hover:text-indigo-600 dark:hover:text-indigo-500 mb-2 pb-2 border-b-2 border-gray-300 dark:border-dark-300 hover:border-indigo-500 dark:hover:border-indigo-400 transition ease-in-out duration-300 cursor-default;
+}
+
+.side-card-title {
+  @apply ml-4 font-title text-gray-800 dark:text-gray-200 transition ease-in-out duration-1000;
+}
+
+.side-card-data {
+  @apply flex flex-row h-auto py-2 rounded-lg hover:bg-gray-200 text-gray-800 dark:text-gray-200 dark:hover:bg-dark-300 transition ease-in-out duration-300;
+}
+
+.side-card-data-left {
+  @apply w-14 pl-3;
+}
+
+.side-card-data-right {
+  @apply w-full;
+}
+
+.footer-data {
+  @apply hover:bg-gray-200 dark:hover:bg-dark-300 rounded-lg px-4 py-2 transition ease-in-out duration-300;
+}
+
+.dark-theme {
+  @apply dark:bg-dark-200 dark:text-gray-200 transition ease-in-out duration-1000;
+}
+
+.discussion-card {
+  @apply relative my-0 m-5 px-5 py-4 bg-white flex flex-row shadow-md h-auto text-gray-800 border-gray-200 dark:border-dark-300 border-b-2 dark-theme;
+}
+
+.discussion-user {
+  @apply font-semibold hover:text-gray-700 dark:hover:text-gray-300;
+}
+
+.discussion-date {
+  @apply text-xs text-gray-600 dark:text-gray-400 transition ease-in-out duration-1000;
+}
+
+.discussion-title {
+  @apply text-xl font-semibold mb-4;
+}
+
+.discussion-body {
+  @apply text-gray-600 dark:text-gray-400 transition ease-in-out duration-1000;
+}
+
+.discussion-button {
+  @apply w-20 h-auto mr-4 hover:text-indigo-600 dark:hover:text-indigo-500 transition ease-in-out duration-500 transform hover:scale-110;
+}
